@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 
-import { Exemplo04_useState} from './hooks/Exemplo04_useState'
+import { Exemplo05_useEffect} from './hooks/Exemplo05_useEffect'
 
 function App() {
 
   return (
-    <Exemplo04_useState />
+    <Exemplo05_useEffect />
   )
 }
 
