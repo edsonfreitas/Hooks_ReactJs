@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 
-import { Exemplo01_useState } from './hooks/Exemplo01_useState'
+import { Exemplo02_useState } from './hooks/Exemplo02_useState'
 
 function App() {
 
   return (
-    <Exemplo01_useState />
+    <Exemplo02_useState />
   )
 }
 
