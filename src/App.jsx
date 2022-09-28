@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 
-import { Exemplo06_useEffect} from './hooks/Exemplo06_useEffect'
+import Exemplo07_useContext from './hooks/Exemplo07_useContext'
 
 function App() {
 
   return (
-    <Exemplo06_useEffect />
+    <Exemplo07_useContext/>
   )
 }
 
