@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 
-import {Exemplo10_useRef} from './hooks/Exemplo10_useRef'
+import { Exemplo11_useReducer } from './hooks/Exemplo11_useReducer'
 
 function App() {
 
   return (
-    <Exemplo10_useRef/>
+    <Exemplo11_useReducer/>
   )
 }
 
