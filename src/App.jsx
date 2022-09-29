@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 
-import { Exemplo12_1_useMemo } from './hooks/Exemplo12_1_useMemo'
+import { Exemplo13_useCallback } from './hooks/Exemplo13_useCallback'
 
 function App() {
 
   return (
-    <Exemplo12_1_useMemo />
+    <Exemplo13_useCallback />
   )
 }
 
