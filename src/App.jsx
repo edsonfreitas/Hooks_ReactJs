@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 
-import Exemplo09_useContext from './hooks/Exemplo09_useContext'
+import {Exemplo10_useRef} from './hooks/Exemplo10_useRef'
 
 function App() {
 
   return (
-    <Exemplo09_useContext/>
+    <Exemplo10_useRef/>
   )
 }
 
