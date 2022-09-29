@@ -1,5 +1,6 @@
 //Exemplo com useContext
 import  React, {createContext, useContext} from 'react'
+import { useState } from 'react';
 
     //Criar Contexto
     const Contexto = createContext();
@@ -8,9 +9,16 @@ import  React, {createContext, useContext} from 'react'
  function Principal(){
 
     let frase = "Enviando informações com useContext";
-    
+
+    const [fundo, setFundo] = useState('green')
+
+    //Função Altera background da Camada
+     const alterarFundo =() =>{
+        setFundo(fundo === 'green'? 'blue': 'green');
+     }
+
     return(
-        <Contexto.Provider value={{frase}}>
+        <Contexto.Provider value={{frase, fundo, alterarFundo}}>
             <Camada1 />
         </Contexto.Provider>
     )
@@ -37,11 +45,12 @@ function Camada2(){
 //Componente Camada2
 function Camada3(){
         //Usar o mesmo nome da variável do componente de origem
-    const {frase} = useContext(Contexto);
+    const {frase, fundo,alterarFundo} = useContext(Contexto);
 
     return(
-        <div style={{backgroundColor:'green', width:'300px', height:'300px', margin:'50px'}}>
+        <div style={{backgroundColor:fundo, width:'300px', height:'300px', margin:'50px'}}>
             <p>{frase}</p>
+            <button onClick={alterarFundo}>Clique aqui</button>
         </div>
     )
 }
